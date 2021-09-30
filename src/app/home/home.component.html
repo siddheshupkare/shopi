@@ -1,0 +1,26 @@
+
+<div class="container">
+  <h1 routerLink="category">WELCOME TO SHOPI</h1>
+  <!-- <h1>AStronomy Picture of the Day</h1> -->
+  <!-- <mat-slide-toggle [(ngModel)]="isChecked">Slide Toggle Checked: {{isChecked}}</mat-slide-toggle>
+  <div *ngIf="isChecked;else elseBlock">
+    <img src="assets/images/onbulb.png">
+  </div>
+  <ng-template #elseBlock>
+    <img src="assets/images/offbulb.png">
+  </ng-template> -->
+  <!-- <h1>{{nasadata?.title}}</h1>
+  <h2>{{nasadata?.copyright}}</h2>
+  <h2>{{nasadata?.date}}</h2>
+  <img src={{nasadata?.hdurl}}>
+  <p>{{nasadata?.explanation}}</p> -->
+<div class="flex">
+  <div class="card" *ngFor="let item of category">
+    <img src="https://unsplash.it/300" alt="">
+    <div class="card-body">
+     <h3 [routerLink]="['category',item]">{{item | uppercase}}</h3>
+    </div>
+  </div>
+</div>
+</div>
+

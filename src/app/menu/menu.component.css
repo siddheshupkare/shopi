@@ -1,0 +1,14 @@
+.cont{
+  display: flex;
+ justify-content: center;
+
+}
+
+div > button
+{
+  margin-right: 20px;
+}
+
+h1{
+  font-size: 3em;
+}
